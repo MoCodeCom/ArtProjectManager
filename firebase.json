@@ -1,0 +1,13 @@
+{
+  "hosting": [
+    {
+      "target": "app",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "us-east1"
+      },
+      "ignore": [
+       ]
+    }
+  ]
+}

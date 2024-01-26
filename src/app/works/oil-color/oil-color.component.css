@@ -1,0 +1,32 @@
+.backBtn button{
+  border: 0px solid transparent;
+  width: 10rem;
+  color: gray;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+
+}
+
+.backBtn{
+  text-align: center;
+  border-bottom: 2px solid gray;
+
+}
+
+.col{
+  margin-top: 30px;
+}
+
+@media(max-width:1000px){
+  #listImage{
+    display: block;
+
+
+  }
+
+  .col{
+    margin-top: 40px;
+    width: 100%;
+  }
+}

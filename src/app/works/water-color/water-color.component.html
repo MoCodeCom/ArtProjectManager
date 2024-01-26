@@ -1,0 +1,22 @@
+<div class="backBtn">
+  <button
+  *ngIf="language === 'Arabic'"
+  (click)="back()">Back</button>
+
+
+  <button
+  *ngIf="language === 'English'"
+  (click)="back()">العودة</button>
+</div>
+<!--
+<div class="spinner-border text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+-->
+
+
+<div class="row row-cols-3 g-3" id="listImage">
+  <div class="col" *ngFor="let item of items">
+      <app-image-item [workItem]="item"></app-image-item>
+  </div>
+</div>

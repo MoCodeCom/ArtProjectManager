@@ -1,0 +1,32 @@
+<!-- back button -->
+<div class="backBtn">
+  <button
+  *ngIf="language === 'Arabic'"
+  (click)="back()">Back</button>
+
+
+  <button
+  *ngIf="language === 'English'"
+  (click)="back()">العودة</button>
+</div>
+<!--spinner-->
+<div *ngIf="spinnerEle">
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
+<!-- contents -->
+<div class="container1">
+  <div class="t1">
+    <img src="{{itemShow.url}}" alt="test img"/>
+  </div>
+  <div class="t2">
+    <div class="t2div">
+      <h4>{{itemShow.name}}</h4>
+      <p>{{itemShow.name}}</p>
+    </div>
+  </div>
+</div>
+

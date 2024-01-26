@@ -1,0 +1,77 @@
+.backBtn button{
+  border: 0px solid transparent;
+  width: 10rem;
+  margin-top: 3rem;
+  color: gray;
+}
+
+.backBtn{
+  text-align: center;
+}
+
+
+.container1{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  grid-template-columns: 3fr 1fr;
+  grid-gap:10px;
+
+  display: grid;
+}
+
+.t1{
+  grid-column: 1/2;
+  background-color: (242, 242, 242);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.t1 img{
+
+  width: 70%;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.t2{
+  grid-column: 2/3;
+  background-color: rgb(242, 242, 242);
+  padding: 5rem;
+
+}
+
+@media(max-width:1000px){
+  .container1{
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .t1{
+    grid-column: 1/2;
+    grid-row:1/2;
+
+  }
+
+  .t2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding:0rem;
+  }
+
+  .t2div{
+    padding: 0px 50px;
+  }
+
+  .t2div h4{
+    margin-top: 30px;
+  }
+}
+
+
+
+

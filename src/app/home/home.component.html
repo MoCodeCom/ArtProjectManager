@@ -1,0 +1,99 @@
+<div class="container1">
+  <div class="t1">
+    <img
+    alt="home-image"
+    src={{homeImageUrl}}/>
+    <!-- update buttons for image-->
+    <div class="btnshomeimg">
+      <input
+      type="file"
+      class="uploadImage"
+      #uploadImageRef
+      (change)="uploadImage($event)"
+      >
+      <button class="btn btn-secondary" *ngIf="language === 'English'" (click)="updateImage()">تحديث</button>
+      <button class="btn btn-secondary" *ngIf="language === 'Arabic'" (click)="updateImage()">Update</button>
+    </div>
+  </div>
+
+  <div class="t2">
+    <h4 *ngIf="language === 'English'">جاسم الفضل</h4>
+    <h4 *ngIf="language === 'Arabic'">Jasim Alfadhel</h4>
+  </div>
+
+  <div class="t3">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <p *ngIf="language === 'English'">
+        {{content_ar}}
+      </p>
+
+      <p *ngIf="language === 'Arabic'" style="direction: ltr;">
+       {{content_en}}
+      </p>
+      <p>عربي</p>
+      <textarea
+        type="text"
+        class="form-control"
+        ngModel
+        name="ar"
+        id="text_ar"
+        ></textarea>
+
+
+      <p>English</p>
+      <textarea
+        type="text"
+        class="form-control"
+        ngModel
+        name="en"
+        id="text_en"
+        ></textarea>
+      <!-- update content -->
+      <div class="btnhomecontent">
+        <button
+          class="btn btn-secondary"
+          *ngIf="language === 'English'"
+          type="submit"
+          >تحديث</button>
+        <button
+          class="btn btn-secondary"
+          *ngIf="language === 'Arabic'"
+          type="submit">Update</button>
+      </div>
+    </form>
+
+
+  </div>
+
+
+  <div class="t4">
+    <img
+    alt="jasim-img-home"
+    src={{personalImageUrl}}
+    />
+    <!-- update buttons for personal image -->
+    <div class="btnshomepersonal">
+      <input
+      type="file"
+      class="uploadPersonal"
+      #uploadPersonRef
+      (change)="uploadPersonalImage($event)"
+      >
+      <button
+       class="btn btn-secondary"
+       *ngIf="language === 'English'"
+       (click)="updatePsersonalImage()"
+       >تحديث</button>
+      <button class="btn btn-secondary" *ngIf="language === 'Arabic'">Update</button>
+    </div>
+
+  </div>
+  <!--
+  <div class="t5">
+    <button (click)="workBtnHome()" *ngIf="language === 'English'">الاعمال</button>
+    <button (click)="workBtnHome()" *ngIf="language === 'Arabic'">Works</button>
+  </div>
+-->
+
+
+</div>

@@ -1,0 +1,90 @@
+
+
+#navUl{
+
+  width: 100%;
+  right: 0px;
+  left: auto;
+}
+
+#navbarText{
+
+}
+
+#home_a{
+  font-size: 18px;
+  margin-left: 10rem;
+}
+
+#work_a{
+  font-size: 18px;
+}
+
+#blog_a{
+  font-size: 18px;
+}
+
+#about_a{
+  font-size: 18px;
+}
+
+.btnLanguage{
+  border: 0px solid transparent;
+  background-color: transparent;
+}
+
+/*-------------- div slide list -------------*/
+.slideDivDefault
+{
+  background-color: white;
+  opacity: .94;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+
+.slideDiv{
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+
+  /*display:unset;*/
+}
+.slideList {
+  list-style-type: none;
+}
+
+.slideList li{
+  margin-top: 40px;
+}
+.slideList li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#slide-btn{
+  border: 0px solid transparent;
+}
+
+
+
+@media(min-width:992px) {
+
+  .slideDivDefault{
+    display: none;
+  }
+}
+
+
+
+

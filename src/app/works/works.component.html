@@ -1,0 +1,74 @@
+
+<div class="container1">
+  <!-- oil color painting -->
+  <div class="t1">
+    <div>
+      <a routerLink="/works/oilworks" routerLinkActive="Active">
+        <h4 *ngIf="language === 'Arabic'">Oil Color Works</h4>
+        <h4 *ngIf="language === 'English'">الاعمال الزيتية</h4>
+      </a>
+    </div>
+
+  </div>
+  <div class="t2">
+
+    <div class="imgListWork">
+      <img src="../../assets/images/oil_works.JPG" alt="image1"/>
+
+    </div>
+
+  </div>
+
+
+  <!-- water color painting -->
+  <div class="t3">
+    <div>
+      <a routerLink="/works/waterworks" routerLinkActive="Active">
+        <h4 *ngIf="language ==='Arabic'">Water Color Works</h4>
+        <h4 *ngIf="language ==='English'">الاعمال المائية</h4>
+      </a>
+    </div>
+
+  </div>
+  <div class="t4">
+    <div class="imgListWork">
+      <img src="../../assets/images/wc_works.JPG" alt="image1"/>
+
+    </div>
+  </div>
+
+  <!-- outline paingting -->
+  <div class="t5">
+    <div >
+      <a routerLink="/works/outlineworks" routerLinkActive="Active">
+        <h4 *ngIf="language === 'Arabic'">Outline Works</h4>
+        <h4 *ngIf="language === 'English'">اعمال التخطيط</h4>
+      </a>
+    </div>
+
+  </div>
+  <div class="t6">
+    <div class="imgListWork">
+      <img src="../../assets/images/outline_works.JPG" alt="image1"/>
+
+    </div>
+  </div>
+
+  <!-- others painting -->
+  <div class="t7">
+
+    <div>
+      <a routerLink="/works/otherworks" routerLinkActive="Active">
+        <h4 *ngIf="language === 'Arabic'">Other Works</h4>
+        <h4 *ngIf="language === 'English'">الاعمال الاخرى</h4>
+      </a>
+    </div>
+
+  </div>
+  <div class="t8">
+    <div class="imgListWork">
+      <img src="../../assets/images/other_works.JPG" alt="image1"/>
+
+    </div>
+  </div>
+</div>
