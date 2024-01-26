@@ -1,15 +1,34 @@
+
+
 <div class="backBtn">
-  <button
-  *ngIf="language === 'Arabic'"
-  (click)="back()">Back</button>
 
+  <button (click)="back()">
+  <span  *ngIf="language === 'Arabic'">Back</span>
+  <span *ngIf="language === 'English'">العودة</span>
+ </button>
 
-  <button
-  *ngIf="language === 'English'"
-  (click)="back()">العودة</button>
-</div>
-
-<div class="container1">
-
+  <button (click)="Add()">
+    <span *ngIf="language === 'Arabic'">Add</span>
+    <span *ngIf="language === 'English'">اضافة</span>
+  </button>
 
 </div>
+
+<div *ngIf="spinnerEle">
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row row-cols-3 g-3" id="listImage">
+  <div class="col" *ngFor="let item of items">
+      <app-image-item [workItem]="item"></app-image-item>
+  </div>
+</div>
+
+
+

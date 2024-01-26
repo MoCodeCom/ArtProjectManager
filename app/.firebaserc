@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "artapp-d1c03": {
+      "hosting": {
+        "app": [
+          "artapp-d1c03"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "artapp-d1c03"
+  }
+}

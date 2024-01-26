@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class ChangeLanguagesService {
 
   constructor() { }
-  //language:string="Arabic";
+
   behaviourSubject = new BehaviorSubject<string>("English");
 
 

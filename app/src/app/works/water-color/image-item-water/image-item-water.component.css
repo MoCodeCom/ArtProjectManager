@@ -1,0 +1,13 @@
+.card-img-top{
+  width: 20rem;
+}
+
+.col{
+  background-color: transparent;
+}
+
+.row{
+  display: flex;
+  align-content: center;
+  text-align: center;
+}

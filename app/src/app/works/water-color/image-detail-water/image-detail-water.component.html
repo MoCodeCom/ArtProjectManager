@@ -1,0 +1,22 @@
+<div class="backBtn">
+  <button
+  *ngIf="language === 'Arabic'"
+  (click)="back()">Back</button>
+
+
+  <button
+  *ngIf="language === 'English'"
+  (click)="back()">العودة</button>
+</div>
+
+<div class="container1">
+  <div class="t1">
+    <img src="{{itemShow.url}}" alt="test img"/>
+  </div>
+  <div class="t2">
+    <div class="t2div">
+      <h4>{{itemShow.name}}</h4>
+      <p>{{itemShow.name}}</p>
+    </div>
+  </div>
+</div>

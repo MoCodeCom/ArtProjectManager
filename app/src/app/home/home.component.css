@@ -89,10 +89,27 @@
   cursor: pointer;
   box-shadow: 0 3px 5px rgb(184, 184, 184);
 }
+/*---------------------------*/
+/*----------- Updates ---------*/
+.btnshomepersonal button{
+  border-radius: 0px;
+  width: 90%;
+}
+
+.btnshomeimg button{
+  border-radius: 0px;
+  width: 100%;
+}
+
+.btnhomecontent button{
+  border-radius: 0px;
+  width: 100%;
+}
+/*-----------------------------*/
 
 @media (max-width:900px) {
   .container1{
-    grid-template-rows: 150px 50px 250px 150px;
+    grid-template-rows: 150px 50px 400px 150px;
   }
  .t1{
   grid-column: 1/4;
@@ -135,12 +152,16 @@
 .t5 button{
   margin-top: 50px;
 }
+
+.btnshomepersonal button{
+  width: 100%;
+}
 }
 
 @media (max-width:600px) {
   .container1{
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 50px 150px 150px 150px;
+    grid-template-rows: 150px 50px 450px 150px 150px;
   }
 
   .t1{
@@ -155,7 +176,6 @@
    }
 
    .t3{
-
     grid-column: 1/2;
     grid-row:3/4;
 
